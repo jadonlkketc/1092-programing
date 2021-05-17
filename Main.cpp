@@ -6,15 +6,15 @@ int main(){
 	Sudoku a;
 	a.readAPuzzle(grid);
 	if (!a.isValid()) {
-		cout << "¤£¦X²zªº¿é¤J" << endl;
+		cout << "ä¸åˆç†çš„è¼¸å…¥" << endl;
 	}
 	else if (a.search())
 	{
-		cout << "¸Ñµª:" << endl;
+		cout << "è§£ç­”:" << endl;
 		a.printGrid();
 	}
 	else
-		cout << "µL¸Ñ:" << endl;
+		cout << "ç„¡è§£:" << endl;
 
 	return 0;
 }
