@@ -2,19 +2,18 @@
 #include"Sudoku.h"
 using namespace std;
 int main(){
-	int grid[9][9];
 	Sudoku a;
-	a.readAPuzzle(grid);
+	a.readAPuzzle();
 	if (!a.isValid()) {
-		cout << "ä¸åˆç†çš„è¼¸å…¥" << endl;
+		cout << "¤£¦X²zªº¿é¤J" << endl;
 	}
 	else if (a.search())
 	{
-		cout << "è§£ç­”:" << endl;
+		cout << "¸Ñµª:" << endl;
 		a.printGrid();
 	}
 	else
-		cout << "ç„¡è§£:" << endl;
+		cout << "µL¸Ñ:" << endl;
 
 	return 0;
 }

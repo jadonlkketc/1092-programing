@@ -4,7 +4,7 @@ class Sudoku{
 	public:
 		Sudoku();
 		Sudoku(int newGrid[9][9]);
-		void readAPuzzle(int newGrid[9][9]);
+		void readAPuzzle();
 		bool search();
 		int getFreeCellList(const int newGrid[9][9], int newFreeCellList[81][2]);
 		void printGrid();
